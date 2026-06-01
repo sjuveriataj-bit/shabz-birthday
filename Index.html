@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Shabz Di ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+background:#fff0f5;
+text-align:center;
+padding:20px;
+margin:0;
+}
+
+h1{
+color:#9c4dff;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+margin:20px auto;
+max-width:600px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+button{
+background:#9c4dff;
+color:white;
+border:none;
+padding:15px 25px;
+font-size:18px;
+border-radius:30px;
+cursor:pointer;
+margin:20px;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.gallery{
+width:90%;
+max-width:350px;
+margin:15px 0;
+border-radius:20px;
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+#letter{
+animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:20px;
+animation:float 8s linear infinite;
+opacity:0.7;
+pointer-events:none;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-100vh);
+opacity:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+<audio id="music" loop>
+  <source src="tumse.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="playMusic()">
+🎵 Play Tum Se 🎵
+</button>
+<h1>🎉 Happy Birthday Shabz Di 🎉</h1>
+
+<div class="card">
+<h2>❤️ Welcome ❤️</h2>
+
+<p>
+Congratulations, Shabz Di!
+</p>
+
+<p>
+You've unlocked the final treasure.
+</p>
+
+<p>
+Before you open it...
+</p>
+
+<p>
+Take a deep breath,
+smile,
+and remember how loved you are. 💜
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🌸 A Message For You 🌸</h2>
+
+<p>
+The treasure was never hidden in the QR codes.
+</p>
+
+<p>
+The treasure is having a sister like you.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📸 Beautiful Memories 📸</h2>
+
+<img src="img1.jpg" class="gallery">
+<img src="img2.jpg" class="gallery">
+<img src="img3.jpg" class="gallery">
+<img src="img4.jpg" class="gallery">
+<img src="img5.jpg" class="gallery">
+<img src="img6.jpg" class="gallery">
+<img src="img7.jpg" class="gallery">
+<img src="img8.jpg" class="gallery">
+<img src="img9.jpg" class="gallery">
+<img src="img10.jpg" class="gallery">
+
+<p>
+Every picture tells a story.
+Every story reminds me how lucky I am to have you. 💜
+</p>
+
+</div>
+
+<p style="font-size:20px;">
+🔐 One final secret remains...
+</p>
+
+<button onclick="showLetter()">
+💜 Open Your Treasure 💜
+</button>
+
+<div id="letter" style="display:none;">
+
+<div class="card">
+
+<h2>💌 A Letter For Shabz Di 💌</h2>
+
+<img src="img1.jpg"
+style="width:220px;border-radius:20px;box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+
+<p>🎁 FINAL TREASURE UNLOCKED 🎁</p>
+
+<p>Dear Shabz Di,</p>
+
+<p>
+For a moment, forget that today is your birthday.
+</p>
+
+<p>
+Forget the cake.
+Forget the wishes.
+Forget the numbers.
+</p>
+
+<p>
+I want you to remember something else.
+</p>
+
+<p>
+There will be days when life feels difficult.
+Days when things don't go as planned.
+Days when you feel tired, disappointed, or alone.
+</p>
+
+<p>
+When those days come, I want you to remember this message.
+</p>
+
+<p>
+You are stronger than you think.
+</p>
+
+<p>
+You are more loved than you realize.
+</p>
+
+<p>
+And you have touched more lives than you know.
+</p>
+
+<p>
+You spend so much time caring about everyone else that sometimes you forget how special you are.
+</p>
+
+<p>
+So today, let me remind you.
+</p>
+
+<p>
+You are enough.
+</p>
+
+<p>
+Not because of your achievements.
+Not because of your success.
+Not because of what others think of you.
+</p>
+
+<p>
+You are enough simply because you are you.
+</p>
+
+<p>
+And if life ever makes you doubt that,
+come back and read this message again.
+</p>
+
+<p>
+Because your little brother believes in you.
+Always has.
+Always will.
+</p>
+
+<p>
+Thank you for being my Shabz Di.
+</p>
+
+<p>
+Out of all the treasures in this world,
+having you as my sister will always be my favorite one.
+</p>
+
+<p>
+Happy Birthday ❤️
+</p>
+
+<p>
+With love,<br>
+Juvi
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function showLetter(){
+document.getElementById("letter").style.display="block";
+}
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+heart.innerHTML="💜";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(Math.random()*20+15)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+
+}
+
+setInterval(createHeart,800);
+
+</script>
+<script>
+function playMusic(){
+document.getElementById("music").play();
+}
+</script>
+</body>
+</html>
